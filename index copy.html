@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+  <header>
+  <title>Squonk Squad Graphs</title>
+  <link rel="icon" href="images/Graph.png">
+
+  <link rel="stylesheet" href="index.css">
+  
+  <script type="module" src="index.js"></script>
+  <script src="https://cdn.plot.ly/plotly-3.3.1.min.js" charset="utf-8"></script>
+  </header>
+  <body>
+    <div class="topbar">
+      <button id="js-graph-selector-toggle" class="graph-selector-toggle">Graph Type</button>
+      <button id="js-command-button" class="command-button">Include Commands</button>
+    </div>
+    <div id="js-graph-selector-container" class="graph-selector-container" style="display: none;">
+      <button class="js-graph-selector-button graph-selector-button" data-graph-id="User Monthly Messages">User Monthly Messages</button>
+      <button class="js-graph-selector-button graph-selector-button" data-graph-id="User Total Messages">User Total Messages</button>
+      <button class="js-graph-selector-button graph-selector-button" data-graph-id="Server Monthly Messages">Server Monthly Messages</button>
+      <button class="js-graph-selector-button graph-selector-button" data-graph-id="Server Total Messages">Server Total Messages</button>
+    </div>
+
+    <div id="User Monthly Messages" class="js-graph-display" style="display: initial;">
+    </div>
+    <div id="User Total Messages" class="js-graph-display" style="display: none;">
+    </div>
+    <div id="Server Monthly Messages" class="js-graph-display" style="display: none;">
+    </div>
+    <div id="Server Total Messages" class="js-graph-display" style="display: none;">
+    </div>
+    <div id="Bot User Monthly Messages" class="js-graph-display" style="display: none;">
+    </div>
+    <div id="Bot User Total Messages" class="js-graph-display" style="display: none;">
+    </div>
+    <div id="Bot Server Monthly Messages" class="js-graph-display" style="display: none;">
+    </div>
+    <div id="Bot Server Total Messages" class="js-graph-display" style="display: none;">
+    </div>
+  </body>
+</html>
+    

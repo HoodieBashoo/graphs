@@ -1,0 +1,65 @@
+/* Behold, chaos */
+
+.topbar {
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+  position: fixed;
+  width: 25%;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-100px);
+}
+
+.graph-selector-toggle, .graph-selector-button, .command-button {
+  color: black;
+  font-size: small;
+  border-style: none;
+  border-radius: 5px;
+  background-color: lightgrey;
+  height: 40px;
+}
+
+.graph-selector-toggle:hover, .graph-selector-button:hover, .command-button:hover {
+  background-color: silver;
+  cursor: pointer;
+}
+
+.graph-selector-toggle, .graph-selector-button {
+  width: 200px;
+}
+
+.graph-selector-toggle {
+  z-index: 10;
+}
+
+.command-button {
+  width: 80px;
+}
+
+.graph-selector-container {
+  z-index: 15;
+  position: fixed;
+  top: 60px;
+  right: 50%;
+  transform: translateX(100px);
+  flex-direction: column;
+  gap: 10px;
+}
+
+.graph-selector-button {
+  z-index: 20;
+}
+
+.graph-selector-image {
+  width: 100%;
+  height: 100%;
+}
+
+.activated {
+  background-color: green;
+  color: white;
+}
+.activated:hover {
+  background-color: darkgreen;
+}
